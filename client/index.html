@@ -2,12 +2,37 @@
 <html>
   <head>
     <title>Back End Assessment</title>
+    <link rel="stylesheet" href="index.css"/>
   </head>
   <body class="container">
-    <button id="complimentButton">Get a compliment</button>
+
+    <div class="page-alignment">
+      <button class="generateBtn" id="complimentButton">Get a Compliment</button>
+
+        <form class="inputField" id="complimentForm">
+          <label for="complimentInput">Create a Compliment:</label>
+          <input id="complimentInput"/>
+          <button class="inputBtn">Submit</button>
+        </form>
+
+      <button class="deleteBtn" id="deleteComplement">Delete Random Compliment</button>
+
+      <br>
+      <br>
+
+      <button class="generateBtn" id="fortuneButton">Get a fortune</button>
+
+        <form class="inputField" id="fortuneForm">
+          <label>Create a Fortune:</label>
+          <input id="fortuneInput"/>
+          <button class="inputBtn">Submit</button>
+        </form>
+
+      <button class="deleteBtn" id="deleteFortune">Delete Random Fortune</button>
+
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
-    
   </body>
 </html>
