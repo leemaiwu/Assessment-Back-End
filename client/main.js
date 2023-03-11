@@ -4,7 +4,8 @@ const postCompliement = document.getElementById('complimentForm')
 const receivedCompliment = document.getElementById('complimentInput')
 const postFortune = document.getElementById('fortuneForm')
 const receivedFortune = document.getElementById('fortuneInput')
-const deleteCompliment = document.getElementById('deleteComplement')
+const deletedCompliment = document.getElementById('deleteCompliment')
+const deletedFortune = document.getElementById('deleteFortune')
 
 
 const getCompliment = () => {
@@ -14,7 +15,6 @@ const getCompliment = () => {
             alert(data);
     });
 };
-
 const getFortune = () => {
     axios.get('http://localhost:4000/api/fortune/')
     .then((result) => {
@@ -40,7 +40,6 @@ const submitCompliment = (event) => {
         alert('Error submitting compliment.')
     })
 }
-
 const submitFortune = (event) => {
     event.preventDefault()
     const fortInput = {fortune: receivedFortune.value}
@@ -55,15 +54,28 @@ const submitFortune = (event) => {
     })
 }
 
+
+
 function complimentDeleted () {
     axios.delete('http://localhost:4000/api/compliment/')
     .then((result) => {
-        console.log(`Deleted compliment: ${result.data}`)
-        alert(result.data)
+        console.log(`${result.data} deleted.`)
+        alert(`${result.data} deleted.`)
     })
     .catch((err) => {
         console.log(err)
         alert('Error deleting compliment.')
+    })
+}
+function fortuneDeleted () {
+    axios.delete('http://localhost:4000/api/fortune/')
+    .then((result) => {
+        console.log(`${result.data} deleted.`)
+        alert(`${result.data} deleted.`)
+    })
+    .catch((err) => {
+        console.log(err)
+        alert('Error deleting fortune.')
     })
 }
 
@@ -71,4 +83,6 @@ complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)
 postCompliement.addEventListener('submit', submitCompliment)
 postFortune.addEventListener('submit', submitFortune)
-deleteCompliment.addEventListener('click', complimentDeleted)
+deletedCompliment.addEventListener('click', complimentDeleted)
+deletedFortune.addEventListener('click', fortuneDeleted)
+

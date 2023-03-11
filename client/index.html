@@ -9,24 +9,63 @@
     <div class="page-alignment">
       <button class="generateBtn" id="complimentButton">Get a Compliment</button>
 
-        <form class="inputField" id="complimentForm">
-          <label for="complimentInput">Create a Compliment:</label>
-          <input id="complimentInput"/>
-          <button class="inputBtn">Submit</button>
-        </form>
+      <form class="inputField" id="complimentForm">
+        <h4>Create a New Compliment</h4>
+        <label for="complimentInput">Original Compliment:</label>
+        <input id="complimentInput"/>
+        <button class="inputBtn">Submit</button>
+      </form>
+      
+      <form class="updateField" id="complimentPpdate">
+        <h4>Update a Compliment</h4>
 
-      <button class="deleteBtn" id="deleteComplement">Delete Random Compliment</button>
+      <section class="sectionToListAll">
+        <label class="viewAllComp">View all Compliments</label><button class="allListBtn" for="viewAllComp">Here</button>
+      </section>
 
       <br>
+
+        <label for="existingCompliment">Current Compliment,</label>
+        <input id="existingCompliment"/>
+
+        <label for="updatedCompliment">& Your Revised Compliment,</label>
+        <input id="updatedCompliment"/>
+        <button class="inputBtn">Update</button>
+      </form>
+      
       <br>
+
+      <button class="deleteBtn" id="deleteCompliment">Delete Random Compliment</button>
+
+      <div class="divider"></div>
 
       <button class="generateBtn" id="fortuneButton">Get a fortune</button>
 
-        <form class="inputField" id="fortuneForm">
-          <label>Create a Fortune:</label>
-          <input id="fortuneInput"/>
-          <button class="inputBtn">Submit</button>
-        </form>
+      <form class="inputField" id="fortuneForm">
+        <h4>Create a New Fortune</h4>
+        <label>Original Fortune:</label>
+        <input id="fortuneInput"/>
+        <button class="inputBtn">Submit</button>
+      </form>
+
+      <form class="updateField" id="fortuneUpdate">
+        <h4>Update a Fortune</h4>
+
+        <section class="sectionToListAll">
+          <label class="viewAllFort">View all Fortunes</label><button class="allListBtn" for="viewAllFort">Here</button>
+        </section>
+
+      <br>
+
+        <label for="existingFortune">Current Fortune,</label>
+        <input id="existingFortune"/>
+
+        <label for="updatedFortune">& Your Revised Fortune,</label>
+        <input id="updatedFortune"/>
+        <button class="inputBtn">Update</button>
+      </form>
+
+      <br>
 
       <button class="deleteBtn" id="deleteFortune">Delete Random Fortune</button>
 

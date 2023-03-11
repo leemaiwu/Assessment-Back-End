@@ -8,6 +8,15 @@ body {
     gap: 20px
 }
 
+.divider {
+    display: flex;
+    width: 100%;
+    background-color: rgb(112, 112, 112);
+    height: .5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .generateBtn {
     width: 150px;
     height: 25px;
@@ -21,6 +30,29 @@ body {
 .inputFieldSection {
     display: flex;
     justify-content: row;
+}
+
+.sectionToListAll{
+    display: flex;
+    justify-content: row;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.allListBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-bottom: 1px solid black;
+}
+
+.allListBtn:hover {
+    color: rgb(138, 138, 138);
+    border-bottom: 1px solid rgb(138, 138, 138);
 }
 
 .deleteBtn {
