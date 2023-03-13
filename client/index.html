@@ -16,15 +16,13 @@
         <button class="inputBtn">Submit</button>
       </form>
       
-      <form class="updateField" id="complimentPpdate">
-        <h4>Update a Compliment</h4>
-
+      <h4>Update a Compliment</h4>
       <section class="sectionToListAll">
-        <label class="viewAllComp">View all Compliments</label><button class="allListBtn" for="viewAllComp">Here</button>
+        <label class="viewAllComp">View all Compliments</label>
+        <button class="allListBtn" for="viewAllComp" id="getAllCompliments">Here</button>
       </section>
-
-      <br>
-
+      
+      <form class="updateField" id="complimentUpdate">
         <label for="existingCompliment">Current Compliment,</label>
         <input id="existingCompliment"/>
 
@@ -34,11 +32,8 @@
       </form>
       
       <br>
-
       <button class="deleteBtn" id="deleteCompliment">Delete Random Compliment</button>
-
       <div class="divider"></div>
-
       <button class="generateBtn" id="fortuneButton">Get a fortune</button>
 
       <form class="inputField" id="fortuneForm">
@@ -47,28 +42,23 @@
         <input id="fortuneInput"/>
         <button class="inputBtn">Submit</button>
       </form>
+      
+      <h4>Update a Fortune</h4>
+      <section class="sectionToListAll">
+        <label class="viewAllFort">View all Fortunes</label>
+        <button class="allListBtn" for="viewAllFort" id="getAllFortunes">Here</button>
+      </section>
 
       <form class="updateField" id="fortuneUpdate">
-        <h4>Update a Fortune</h4>
-
-        <section class="sectionToListAll">
-          <label class="viewAllFort">View all Fortunes</label><button class="allListBtn" for="viewAllFort">Here</button>
-        </section>
-
-      <br>
-
         <label for="existingFortune">Current Fortune,</label>
         <input id="existingFortune"/>
-
         <label for="updatedFortune">& Your Revised Fortune,</label>
         <input id="updatedFortune"/>
         <button class="inputBtn">Update</button>
       </form>
 
       <br>
-
       <button class="deleteBtn" id="deleteFortune">Delete Random Fortune</button>
-
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
